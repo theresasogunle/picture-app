@@ -57,11 +57,11 @@ const PhotoModal = memo(({ data, onClose }) => {
       </div>
       <div id="photo-modal-body" ref={node} className="modal__body">
         <img src={photo?.urls?.regular} alt={photo?.description || "Photo"} />
-        <div className="footer">
-          <h3 className="name">
+        <div className="modal__footer">
+          <h3 className="modal__footer__name">
             {photo?.user?.first_name} {photo?.user?.last_name}
           </h3>
-          <p className="location">{photo?.user?.location}</p>
+          <p className="modal__footer__location">{photo?.user?.location}</p>
         </div>
       </div>
     </div>

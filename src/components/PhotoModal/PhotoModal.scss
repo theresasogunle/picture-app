@@ -70,23 +70,23 @@
         object-fit: contain;
       }
     }
-    .footer {
-      display: flex;
-      padding: 20px;
-      flex: 1;
-      justify-content: center;
-      flex-direction: column;
-      .name {
-        color: #2a3d5b;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-        font-weight: 600;
-      }
-      .location {
-        color: #7d889c;
-        font-size: 14px;
-        font-weight: 600;
-      }
+  }
+  &__footer {
+    display: flex;
+    padding: 20px;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    &__name {
+      color: #2a3d5b;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    &__location {
+      color: #7d889c;
+      font-size: 14px;
+      font-weight: 600;
     }
   }
 }
@@ -101,11 +101,4 @@
   100% {
     opacity: 1;
   }
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
 }
