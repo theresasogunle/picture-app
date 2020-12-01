@@ -1,0 +1,54 @@
+@import "../../assets/scss/mixins.scss";
+
+.main {
+  padding-bottom: 100px;
+}
+.header {
+  background-color: #dde2e9;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @include respond-phone {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  &__title {
+    color: #263958;
+    font-weight: bold;
+    font-size: 2.2rem;
+    &__search {
+      color: #6c7a91;
+    }
+  }
+  &__searchBox {
+    position: relative;
+    &__icon {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 60px;
+      padding: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        height: 100%;
+        width: auto;
+      }
+    }
+    input {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.05);
+      border: 0;
+      width: 100%;
+      font-size: 16px;
+      padding: 20px;
+      padding-left: 60px;
+      outline: 0;
+    }
+  }
+}
